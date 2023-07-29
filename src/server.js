@@ -19,7 +19,7 @@ server.use(express.urlencoded({ extended: true }));
 server.use(logger);
 
 server.use(authRoutes);
-server.use('api/v1', v1Routes);
+server.use('/api/v1', v1Routes);
 server.use('/api/v2', v2Routes);
 
 server.use('*', notFoundHandler);
