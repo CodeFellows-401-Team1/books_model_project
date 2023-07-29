@@ -5,9 +5,9 @@ Auth Module Final Project
 
 Author: Jonathan Brooks, Christina Hollie
 
-<!-- [Pull Request](https://github.com/jonbrooks01/auth-api/pull/1) -->
+[Pull Request](https://github.com/CodeFellows-401-Team1/books_model_project/pull/3) -->
 
-<!-- [deployed server](https://basic-server-4efy.onrender.com) -->
+[deployed server](https://lab09-7jlr.onrender.com)
 
 Setup
 .env requirements:PORT - 3001
