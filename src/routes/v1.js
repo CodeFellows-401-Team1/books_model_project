@@ -6,9 +6,11 @@ const dataModules = require('../models');
 const router = express.Router();
 
 router.param('model', (req, res, next) => {
+  console.log(req);
   const modelName = req.params.model;
   if (dataModules[modelName]) {
     req.model = dataModules[modelName];
+    console.log(req.model);
     next();
   } else {
     next('Invalid Model');
@@ -26,7 +28,7 @@ async function handleGetAll(req, res) {
   res.status(200).json(allRecords);
 }
 
-async function handleCreate(req, res) {
+async function handleGetOne(req, res) {
   const id = req.params.id;
   let theRecord = await req.model.get(id);
   res.status(200).json(theRecord);
